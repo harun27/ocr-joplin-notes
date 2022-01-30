@@ -26,7 +26,7 @@ For a quick installation, there is a docker version available. See the examples 
 
 If you don't like docker, there is the manual installation option.
 If you already installed [rest_uploader](https://github.com/kellerjustin/rest-uploader) you probably almost setup already.
-All that is left is to install this scrip and setup the environment variables.
+All that is left is to install this script and setup the environment variables.
 
 ```shell
 pip install ocr-joplin-notes
