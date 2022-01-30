@@ -1,7 +1,7 @@
 FROM python:3.9-slim-buster
 
 RUN apt-get update \
-&& apt-get install --yes --no-install-recommends ffmpeg libsm6 libxext6 tesseract-ocr tesseract-ocr-nld \
+&& apt-get install --yes --no-install-recommends ffmpeg libsm6 libxext6 tesseract-ocr poppler-utils tesseract-ocr-eng \
 && apt-get clean \
 && rm -rf /var/lib/apt/lists/*
 
