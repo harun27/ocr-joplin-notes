@@ -6,10 +6,12 @@ import cv2
 import numpy as np
 
 import PyPDF2
-from PIL import Image
+#from PIL import Image # original code
+from PIL import Image Image.MAX_IMAGE_PIXELS = 1000000000
+#Image.MAX_IMAGE_PIXELS = None #something else I read to try
 from pdf2image import convert_from_path
 from pytesseract import image_to_string, TesseractError
-Image.MAX_IMAGE_PIXELS = None
+
 
 class FileOcrResult:
     def __init__(self, pages):
