@@ -9,7 +9,7 @@ import PyPDF2
 from PIL import Image
 from pdf2image import convert_from_path
 from pytesseract import image_to_string, TesseractError
-
+PIL.Image.MAX_IMAGE_PIXELS = None
 
 class FileOcrResult:
     def __init__(self, pages):
